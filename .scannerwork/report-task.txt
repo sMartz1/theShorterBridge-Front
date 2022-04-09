@@ -1,0 +1,6 @@
+projectKey=ShorterBridge
+serverUrl=http://localhost:9000
+serverVersion=9.4.0.54424
+dashboardUrl=http://localhost:9000/dashboard?id=ShorterBridge
+ceTaskId=AYALbLYinJqVAYS2QGVy
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYALbLYinJqVAYS2QGVy
