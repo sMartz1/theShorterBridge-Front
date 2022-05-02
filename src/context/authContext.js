@@ -2,10 +2,7 @@ import { createContext , useContext } from "react";
 
 const authContext = createContext();
 
-export const useAuth = ()=>{
-    const context = useContext(authContext);
-    return context;
-}
+export const useAuth = ()=> useContext(authContext);
 
 export const AuthProvider = ({children})=>{
     const user = {
