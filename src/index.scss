@@ -1,0 +1,13 @@
+@import "./assets/scss/global.scss";
+*{
+    margin: 0;
+    padding: 0;
+}
+.app-container{
+    background-color: $background-color;
+    height: 100vh;
+    font-family: $font-family ;
+    color: $font-color;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}

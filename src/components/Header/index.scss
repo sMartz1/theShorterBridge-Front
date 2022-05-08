@@ -1,0 +1,11 @@
+header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  .header-menu {
+    padding-right: 1rem;
+    padding-top: 1rem;
+  }
+}

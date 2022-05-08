@@ -1,0 +1,18 @@
+.landpage-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-top: 4rem;
+
+  .landpage-title {
+    font-size: 64px;
+    line-height: 64px;
+    text-align: left;
+   
+  }
+  .landpage-subtitle{
+    
+    margin-left: -25px;
+    text-align: left;
+  }
+}

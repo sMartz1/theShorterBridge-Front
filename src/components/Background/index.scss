@@ -1,0 +1,11 @@
+@import "../../assets/scss/global.scss";
+
+.bubble-bg{
+    position: fixed;
+    width: 38rem;
+    height: 38rem;
+    background-color:$font-color ;
+    border-radius: 50%;
+    opacity: 0.25;
+    top:-17rem;
+}
