@@ -12,6 +12,7 @@ export default function TextFieldCustom({
   errors,
   type,
   setValue,
+  hasIcon=true,
   ...props
 }) {
 
@@ -19,6 +20,19 @@ export default function TextFieldCustom({
     const text = await navigator.clipboard.readText();
     setValue(name,text);
   }
+  const inputProps = hasIcon ? {InputProps:{
+    endAdornment: (
+
+      <InputAdornment position="start">
+        <IconButton aria-label="Paste" onClick={pasteContent}>
+        <ContentPasteIcon fontSize="small" />
+        </IconButton>
+        
+      </InputAdornment>
+    ),
+  }
+
+  } : {InputProps:{...props}};
   return (
     <Controller
       name={name}
@@ -27,24 +41,15 @@ export default function TextFieldCustom({
       render={({ field }) => (
         <TextField
           {...field}
-          {...props}
+          {...inputProps}
           id={id}
           label={label}
           variant="standard"
           error={!!errors}
           type={type ? type : "text"}
           helperText={errors ? errors?.message : ""}
-          InputProps={{
-            endAdornment: (
-
-              <InputAdornment position="start">
-                <IconButton aria-label="Paste" onClick={pasteContent}>
-                <ContentPasteIcon fontSize="small" />
-                </IconButton>
-                
-              </InputAdornment>
-            ),
-          }}
+         
+          
         />
       )}
     />

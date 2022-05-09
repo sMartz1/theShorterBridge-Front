@@ -8,12 +8,17 @@ export default function Header() {
   const login = () => {
     navigate("/login");
   };
+
+  const pathname = window.location.pathname;
+  console.log(pathname)
+
   return (
     <header>
       <div className="header-menu">
-        <IconButton touch={true} aria-label="Login" onClick={login} onDoubleClick={login}>
+        {pathname == "/" ? <IconButton aria-label="Login" onClick={login}>
           <AccountCircleIcon fontSize="large" />
-        </IconButton>
+        </IconButton>:""}
+        
       </div>
     </header>
   );
