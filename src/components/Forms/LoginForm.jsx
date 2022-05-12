@@ -51,7 +51,7 @@ export default function LoginForm() {
       </form>
       
       <GoogleButton label='Conectate con Google' type="light" />
-        <h3>No tienes cuenta?</h3>
+        <h3>¿No tienes cuenta?</h3>
       <Divider ><Link href="/register">Registrate</Link></Divider>
       
     </div>

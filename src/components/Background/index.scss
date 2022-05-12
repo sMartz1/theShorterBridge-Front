@@ -7,6 +7,19 @@
     background-color:$font-color ;
     border-radius: 50%;
     opacity: 0.25;
-    top:-17rem;
+    top:-18rem;
     pointer-events: none;
 }
+@media (min-width: 800px) {
+    .bubble-bg{
+        position: fixed;
+        width: 100rem;
+        height: 100rem;
+        background-color:$font-color ;
+        border-radius: 50%;
+        opacity: 0.25;
+        top:18rem;
+        right: 58rem;
+        pointer-events: none;
+    }
+  }
