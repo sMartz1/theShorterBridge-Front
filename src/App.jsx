@@ -4,9 +4,11 @@ import Landpage from "./components/Landpage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Register from "./components/Register";
+import MyLinks from "./components/MyLinks"
 import { AuthProvider } from "./context/authContext";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./assets/MUIThemes/mainTheme";
+import LoggedRoute from "./components/LoggedRoute";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
               <Route path="/" element={<Landpage />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
+              
+              <Route path="/my-links" element={<LoggedRoute><MyLinks /></LoggedRoute>} />
             </Routes>
             <Footer />
           </div>
