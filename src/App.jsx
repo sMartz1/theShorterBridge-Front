@@ -7,10 +7,9 @@ import Register from "./components/Register";
 import MyLinks from "./components/MyLinks"
 import { AuthProvider } from "./context/authContext";
 import { ThemeProvider } from "@mui/material/styles";
-import theme from "./assets/MUIThemes/mainTheme";
+import theme from "./assets/MUIThemes/theme";
 import LoggedRoute from "./components/LoggedRoute";
 import Redirect from "./components/Redirect";
-import Loading from "./components/Loading";
 
 function App() {
   return (

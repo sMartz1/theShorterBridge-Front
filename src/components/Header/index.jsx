@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./index.scss";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LogoutIcon from '@mui/icons-material/Logout';
 import IconButton from "@mui/material/IconButton";
 import { useAuth } from "../../context/authContext";
-import { Link } from "react-router-dom";
 export default function Header() {
   const navigate = useNavigate();
   const {user,signout} = useAuth();

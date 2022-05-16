@@ -17,7 +17,7 @@ const schema = yup.object().shape({
     .oneOf([yup.ref('password'), null], 'Las contraseñas deben coincidir'),
     email:yup.string().email("Introduce un email valido").required('Es necesario un email')
   })
-export default function LoginForm() {
+export default function RegisterForm() {
   const {
     control,
     handleSubmit,

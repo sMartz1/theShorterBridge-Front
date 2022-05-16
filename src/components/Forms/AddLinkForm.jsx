@@ -17,7 +17,7 @@ const schema = yup.object().shape({
     .url("Debe introducir un URL valido")
     .required("Introduzca una URL"),
 });
-export default function AddLink() {
+export default function AddLinkForm() {
   const {
     control,
     handleSubmit,
@@ -58,5 +58,5 @@ export default function AddLink() {
       </div>
     );
    
-    if(linkAdded) return <Link currentLink={linkAdded} />
+    if(linkAdded) {return<Link currentLink={linkAdded} />}
 }
