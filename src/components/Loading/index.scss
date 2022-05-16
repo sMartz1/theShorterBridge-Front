@@ -1,0 +1,44 @@
+$ball-size: 250px;
+.loading-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+
+  .loading-text {
+    color: #0c0a3e;
+    font-size: 2rem;
+  }
+  .reduced {
+    height: 2rem;
+    width: 100%;
+    background-color: #0c0a3e;
+    animation: bounce 2s infinite;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scaleX(1);
+  }
+  20% {
+    transform: scaleX(0.8);
+  }
+  40% {
+    transform: scaleX(0.7);
+  }
+  50% {
+    
+  }
+  60% {
+    transform: scale(0.4,0.5);
+   
+  }
+  85% {
+    transform: scale(0.2,0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -9,6 +9,8 @@ import { AuthProvider } from "./context/authContext";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./assets/MUIThemes/mainTheme";
 import LoggedRoute from "./components/LoggedRoute";
+import Redirect from "./components/Redirect";
+import Loading from "./components/Loading";
 
 function App() {
   return (
@@ -18,10 +20,10 @@ function App() {
           <div className="app-container">
             <Header />
             <Routes>
+              <Route path="/:short" element={<Redirect />} />
               <Route path="/" element={<Landpage />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
-              
               <Route path="/my-links" element={<LoggedRoute><MyLinks /></LoggedRoute>} />
             </Routes>
             <Footer />
