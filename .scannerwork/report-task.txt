@@ -2,5 +2,5 @@ projectKey=ShorterBridgeFront
 serverUrl=http://localhost:9000
 serverVersion=9.4.0.54424
 dashboardUrl=http://localhost:9000/dashboard?id=ShorterBridgeFront
-ceTaskId=AYDLwTi70bkTnIyluIY4
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYDLwTi70bkTnIyluIY4
+ceTaskId=AYDLxdDI0bkTnIyluIY6
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYDLxdDI0bkTnIyluIY6

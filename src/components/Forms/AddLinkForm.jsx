@@ -39,7 +39,7 @@ export default function AddLinkForm() {
     
   };
   if(loading)return<Loading />
-  if (linkAdded === null)
+  if (linkAdded === null){
     return (
       <div className="form-container-add-link">
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -57,6 +57,6 @@ export default function AddLinkForm() {
         </form>
       </div>
     );
-   
-    if(linkAdded) {return<Link currentLink={linkAdded} />}
+  }
+    if(linkAdded) return<Link currentLink={linkAdded} />
 }
